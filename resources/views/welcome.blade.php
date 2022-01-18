@@ -84,7 +84,7 @@
                                         <p class="card-text">{{ $post->body }}</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group"></div>
-                                            <small class="text-muted">9 mins</small>
+                                            <small class="text-muted">{{ $post->created_at->diffForHumans() }}</small>
                                         </div>
                                     </div>
                                 </div>
